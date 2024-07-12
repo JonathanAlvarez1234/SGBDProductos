@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="3.0" xmlns="https://jakarta.ee/xml/ns/persistence">
+    <persistence-unit name="SGBDProductosIN5CV" transaction-type="RESORUCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <properties>
+            <property name="jakarta.persistence.jdbc.driver" values="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" values="jdbc:mysql://localhost:3306/SGBDProductoIN5CV?serverTimezone=GTM-6"/>
+            <property name="jakarta.persistence.jdbc.user" values="jonathanAlvarez"/>
+            <property name="jakarta.persistence.jdbc.password" values="Jooni-200716j"/>
+            <!--opcional-->
+            <property name="hibernate.dialect" values="org.hibernate.dialect.MySQL8Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" values="update"/>
+            <property name="hibernate.show_sql" values="true"/>
+            <property name="hibernate.format_sql" values="true"/>
+            <property name="jakarta.persistence.schoma-generation.database.action" values="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
